@@ -10,6 +10,4 @@ This repository hosts a comprehensive analytical framework and accompanying code
 
 ### robustness_ablation.py: Robustness and ablation study script for validating taxonomy stability using Adjusted Rand Index and HDBSCAN.
 
-### Use these scripts to reproduce the study, generate new data, and perform in-depth moral reasoning analyses of LLM outputs.
-
-For detailed instructions, please refer to the code comments and inline documentation within each script.
+Use these scripts to reproduce the study, generate new data, and perform in-depth moral reasoning analyses of LLM outputs. For detailed instructions, please refer to the code comments and inline documentation within each script.
