@@ -32,42 +32,6 @@ This is an **evaluation and analysis** repository—not a training or deployment
 
 Scripts are intended to replicate the analysis from the paper.
 
-## Selected Results
+For more information about the methodology, experiments, and discussion, see the full paper: [Paper.pdf](Paper.pdf).
 
-### 1. Average safety emphasis across models
-![Average safety emphasis](figures/average_safety_emphasis.png)  
-Average relative weight given to five safety dimensions across all scenarios.  
-All models prioritize **individual protection**, but *Gemma-3* puts more emphasis on **immediate harm** than others.  
-**Systemic risk** is consistently low for all models.
-
----
-
-### 2. Scenario-wise safety emphasis
-![Scenario-wise safety emphasis](figures/scenario_wise_safety_emphasis.png)  
-Safety emphasis broken down by scenario type.  
-For example, in *Corporate Safety vs. Whistleblowing*, DeepSeek-R1 and QwQ strongly favor **individual protection**, while *Gemma-3* focuses on **immediate harm**.  
-Public safety dilemmas show a larger role for **collective welfare**.
-
----
-
-### 3. Reasoning styles (PCA + KMeans clusters)
-![KMeans clusters](figures/pca_kmeans_clusters.png)  
-PCA projection of 11-dimensional normative profiles with KMeans clusters.  
-Three reasoning styles appear: **rule-based conservatism**, **balanced integration**, and **contextual pragmatism**.  
-These styles emerge without manual labeling.
-
----
-
-### 4. Behavioral drift metrics
-![Behavioral drift metrics](figures/behavioral_drift_metrics.png)  
-Variation (standard deviation) in key reasoning metrics across repeated runs of the same scenario.  
-*QwQ* shows higher volatility in reasoning steps and moral term usage, while DeepSeek-R1 and Gemma-3 are more stable.
-
----
-
-### 5. Robustness to dictionary feature removal
-![ARI bootstrap](figures/ari_bootstrap_distribution.png)  
-![Baseline vs Ablation PCA](figures/pca_baseline_vs_ablation.png)  
-Left: Bootstrapped Adjusted Rand Index (ARI) showing moderate consistency between baseline and dictionary-free clustering.  
-Right: PCA projections for baseline vs. ablation; cluster structure is largely preserved, indicating that semantic features alone capture much of the taxonomy.
 
